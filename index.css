@@ -1,0 +1,308 @@
+header,.one,.two{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 30px;
+}
+.header:hover {
+    animation: rotation 1s both;
+  }
+  
+@keyframes rotation {
+    from {
+      transform: scalex(0);
+    }
+    to {
+      transform: scalex(360deg);
+    }
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    text-decoration: underline;
+    
+  }
+
+.header{
+
+position: absolute;
+width: 82px;
+height: 54px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+font-size: 45px;
+line-height: 54px;
+color: #E40046;
+left: 30px;
+text-transform: uppercase;
+}
+.header2{
+    display: flex;
+    gap: 30px;
+    position: absolute;
+    right: 60px;
+}
+.header2 a{
+    /* about */
+
+width: 66px;
+height: 29px;
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 400;
+/* font-size: 24px; */
+line-height: 29px;
+
+color: #000000;
+
+
+}
+.three .one,.three .two{
+    cursor: pointer;
+    margin-right: 60px;
+
+}
+.one pre{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 200;
+font-size: 24px;
+line-height: 29px;
+text-transform: capitalize;
+color: #000000;
+
+}
+.one> div> img{
+    border-radius: 10px;
+
+    width: 445px !important;
+    height: 305px !important;
+}
+.one,.two,.three{
+    display:flex;
+    flex-wrap: wrap;
+    padding: 30px;
+}
+
+
+li{
+    list-style-type: none;
+}
+.three{
+    margin-left: 90px;
+}
+.three .one img{
+    border-radius: 10px;
+
+    width:450px;
+    height: 382px;
+}
+.three .two p {
+    margin-left: -390px;
+    margin-top: 30px;
+}
+
+img{
+    border-radius: 70px;
+
+}
+.three .one p 
+{
+    margin-left: -530px;
+ margin-top: 30px;
+}
+.three .two img{
+    width:380px;
+    height: 396px;
+}
+li img{
+    margin-right: 20px;
+    
+}
+img{
+    width: 35px;
+    height: 35px;
+}
+.info{
+    /* position: absolute; */
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 120px;
+}
+
+span{
+    color:#E40046;
+}
+#span:hover{
+    color: #FF0000  !important;
+    width: 20px;
+}
+.contact{
+    width: 474px;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgb(255, 255, 255);
+    height: 256px;
+    align-items: center;  
+    
+background:white;
+box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), inset 0px 4px 4px rgba(0, 0, 0, 0.25);
+border-radius: 43px;
+  
+}
+.contact #firstimage{
+background: url(5340247_chat_media_network_social_telegram_icon.png);
+    height: 474px;
+}
+
+.contact img,.contact p{
+    margin-top: 30px;
+    align-self: center;
+    width: 150px;
+    height: 150px;
+}
+
+
+img>#phone{
+
+/* width: 352px;     */
+height: 248px;
+}
+h2{
+
+font-family: 'Inter';
+font-style: normal;
+font-weight: 700;
+font-size: 38px;
+line-height: 46px;
+display: flex;
+align-items: center;
+justify-content:center;
+text-transform: capitalize;
+
+color: #964F4F;
+
+
+}h2:hover,span:hover {
+    color: #FF0000  !important; 
+  }
+
+
+
+
+
+.footer-basic {
+    padding:40px 0;
+    background-color:#ffffff;
+    color:#4b4c4d;
+  }
+  .footer-basic .social {
+    text-align:center;
+    padding-bottom:25px;
+  }
+  
+  .footer-basic .social > a {
+    font-size:24px;
+    width:40px;
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    border-radius:50%;
+    border:1px solid #ccc;
+    margin:0 8px;
+    color:inherit;
+    opacity:0.75;
+}
+li>a{ font-size:24px;
+    width:40px;
+    margin:0 8px;
+
+    height:40px;
+    line-height:40px;
+    display:inline-block;
+    text-align:center;
+    color:inherit;
+}
+  
+  .footer-basic .social > a:hover {
+    opacity:0.9;
+  }
+  
+  .footer-basic .copyright {
+    margin-top:15px;
+    text-align:center;
+    font-size:20px;
+    margin-bottom:0;
+  }
+  
+  /* Credit to https://epicbootstrap.com/snippets/footer-basic */
+
+  .about{
+    width: 400px;
+    margin-left :50px;
+  }
+  .abouts div img{
+    width: 300px;
+    height: 400px;
+  }
+  .abouts{
+    font-size: 20px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    gap: 150px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+  }
+.phone{
+    display: none;
+    margin-bottom: -30px;
+}
+
+
+
+  @media (max-width: 800px) {
+
+    .desktop{
+        display: none;
+    }
+    .phone{
+        display: block;
+    }
+
+  li{
+     
+      list-style-type: none;
+      margin: 10px 10px;
+  }
+  
+  .phone img{
+      width: 40px ;
+      height: 40px ;
+      cursor: pointer;
+  }
+  #menu{
+      display: none;
+  }
+.three{
+    margin-left: -50px;
+}
+.three .one img{
+    width: 350px;
+}
+
+  .phone ul{
+      margin-top: -10px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+  }
+}

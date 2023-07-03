@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M.K</title>
+        <!-- Other meta tags, title, etc. -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/5.5.1/css/ionicons.min.css">
+        <link rel="stylesheet" href="./index.css">
+</head>
+<body>
+    <header id="desktop" class="desktop" >
+        <div class="header">m.k</div>
+        <div class="header2">
+            <a href="#abouts">about</a> 
+            <a href="#one">portfolios</a> 
+            <a href="#contact">contact</a> 
+        </div>
+    </header>
+    <header class="phone" id="phone">
+        <img src="./img/134216_menu_lines_hamburger_icon.png"  id="menuButton" onclick="show()" alt="">
+           <div id="menu">
+        <img src="./img/211651_close_round_icon.png"  onclick="hide()"  alt="">
+    <ul>
+        
+        <li><a href="#abouts">about</a> </li>
+        <li><a href="#one">portfolios</a> </li>
+        <li><a href="#contact">contact</a> </li>
+    </ul>   </div>  
+    </header>
+    
+    
+<main>
+<section class="one">
+    <div>
+
+<pre>hello i’m  
+   <span id="span"> melkamu </span>
+         web  developer
+</pre>
+</div>
+        <div>
+            <img src="./img/971.jpg" alt="laptop">
+        </div>
+</section>
+<section class="two">
+<div>
+    <ul> <li>    <h1>front-end</h1>
+    </li>
+    <li><img src="./img/317755_badge_html_html5_achievement_award_icon.png" alt="">html</li>
+    <li><img src="./img/317756_badge_css_css3_achievement_award_icon.png" alt="">css</li>
+    <li><img src="./img/282802_javascript_js_icon.png" alt="">javascript</li>
+    <li><img src="./img/react.png" alt="">react</li></ul>
+</div>
+<div>
+    
+    <ul>
+        <li><h1>back-end</h1></li>
+    <li><img src="./img/4375017_js_logo_node_icon.png" alt="">node</li>
+    <li><img src="./img/4518869_php_icon.png" alt="">php</li>
+    <li><img src="./img/4518857_python_icon.png" alt="">python</li>
+    <li><img src="./img/MySQL-Logo.png" alt="">mysql</li>
+    <li><img src="./img/unnamed.webp" alt="">mongo-db</li>
+</ul>
+
+</div>
+
+</section>
+<h2>projects</h2>
+
+<section class="three">
+<div class="one" id="one"> 
+    <img src="./img/chat.png" alt="" onclick="redirectTo('http://africanews.lovestoblog.com/')">
+    <p  style="color: #343B77;"> simple chatting
+    web site  </p> </div>
+<div class="two">
+    <img src="./img/Screenshot from 2023-07-03 12-56-13.png" alt="">
+  <p style="color: #343B77;"> NEWS WEBSITE 
+    WRITE AND READ </p> 
+</div>
+
+</section>
+
+<h2>about me</h2>
+<section class="abouts" id="abouts">
+     <div class="about">I am a student at aastu University and a 
+        full-stack web developer proficient in PHP,
+         MySQL, Node.js, React, Express, and MongoDB.
+          I specialize in creating dynamic web applications,
+           utilizing my skills in both front-end and back-end development.
+            I am dedicated to continuously expanding my knowledge and staying
+             up-to-date with the latest web development trends. My goal is to 
+             deliver high-quality, user-friendly web solutions that meet the needs 
+             of clients and users.
+ </div>
+
+<div>
+    <img src="./img/People_in_programming_01ung_03.jpg" alt="">
+</div>
+
+</section>
+<h2>contact info</h2>
+
+<section class="info"  id="contact">
+<div class="contact"   id="firstimage" id="">
+    <img src="./img/134146_mail_email_icon.png"style="border-radius: 40px;" alt="">
+   <p> melkemk503@gmail.com</p> 
+</div>
+<div class="contact"id="phone" >
+    <img src="./img/172517_phone_icon.png" style="border-radius: 40px;"  alt="">
+   <p>   +251942194941</p>
+</div>
+
+<div class="contact" id="">
+    <img src="./img/7693324_telegram_social media_logo_messenger_icon.png" alt="">
+  <p>  @melke_mk</p>
+</div>
+
+</section>
+
+<footer>
+    <h2>m.k web developer</h2>
+    
+    
+        <div class="footer-basic">
+            <footer>
+                <div class="social">
+                    <a href="https://github.com/melkemk">
+                        <img src="./img/github.png" alt="">
+                      </a>
+                      
+                      <a href="https://t.me/melke_mk">
+                        <img src="./img/7693324_telegram_social media_logo_messenger_icon.png" alt="">
+                      </a>
+                      
+                      <a href="https://twitter.com/melke_mk">
+                        <img src="./img/104501_twitter_bird_icon.png" alt="">
+                      </a>
+                       <p class="copyright">m.k© 2022</p>
+            </footer>
+        </div>
+
+        <script>
+            function redirectTo(url) {
+              window.location.href = url;
+            }
+
+
+    let menu=document.getElementById('menu')
+function show(){
+menu.style.display='block';
+document.getElementById('menuButton').style.display="none";
+}
+function hide(){
+    document.getElementById('menuButton').style.display="block";
+menu.style.display='none';
+}
+
+            </script>
+</footer>
+</main>
+
+</body>
+</html>
