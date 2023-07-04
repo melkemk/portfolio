@@ -1,22 +1,21 @@
 header,.one,.two{
+  animation:  scale 1s forwards;
     display: flex;
     justify-content: space-around;
     margin-bottom: 30px;
 }
-.header:hover {
-    animation: rotation 1s both;
-  }
+
   
-@keyframes rotation {
-    from {
-      transform: scalex(0);
-    }
-    to {
-      transform: scalex(360deg);
-    }
-  }
+#laptop{
+  animation:  transform 1s forwards;
+}
+#laptop:hover{
+  transform: scale(1.1);
+  border-radius: 54px;
+}
   
   a{
+    transition: color 0.3s ease;
     text-decoration: none;
   }
   a:hover{
@@ -24,8 +23,12 @@ header,.one,.two{
     
   }
 
+  .two{    animation:  scale 1s forwards;
+
+  }
 .header{
 
+  animation: rotation 3s  infinite;
 position: absolute;
 width: 82px;
 height: 54px;
@@ -102,28 +105,49 @@ li{
     width:450px;
     height: 382px;
 }
+
+
+
 .three .two p {
     margin-left: -390px;
     margin-top: 30px;
+    transition: font-size 0.3s ease;
+
 }
+
+.three .two p:hover {
+      font-size: 20px;
+}
+.three .one p:hover {
+      font-size: 20px;
+}
+
+
+
 
 img{
     border-radius: 70px;
 
 }
 .three .one p 
-{
-    margin-left: -530px;
+{    transition: font-size 0.3s ease;
+
+margin-left: -530px;
  margin-top: 30px;
 }
 .three .two img{
     width:380px;
     height: 396px;
 }
-li img{
-    margin-right: 20px;
-    
+li img {
+  transition: transform 0.3s ease;
+  margin-right: 20px;
 }
+
+li img:hover {
+  transform: scale(1.5);
+}
+
 img{
     width: 35px;
     height: 35px;
@@ -136,12 +160,14 @@ img{
     gap: 120px;
 }
 
-span{
+#span{
     color:#E40046;
+    display:inline;
 }
 #span:hover{
-    color: #FF0000  !important;
+    color: #8c3e3e  !important;
     width: 20px;
+    font-size:30px;
 }
 .contact{
     width: 474px;
@@ -305,4 +331,40 @@ li>a{ font-size:24px;
       align-items: center;
       justify-content: center;
   }
+}
+
+
+
+@keyframes scale {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+@keyframes rotation {
+  from {
+    transform: scalex(0);
+  }
+  to {
+    transform: scalex(180deg);
+  }
+}
+
+a:hover {
+  color: #E40046;
+}
+
+a img {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+a:hover img {
+  transform: rotate(360deg);
 }
